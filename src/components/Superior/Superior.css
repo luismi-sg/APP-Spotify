@@ -1,0 +1,130 @@
+.Superior{
+    z-index: 1;
+    padding: 1em 1em;
+    width: calc(100% - 16em);
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212dd ;
+}
+.Superior-flechas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.Superior-svg{
+    height: 2em;
+    width: 2em;
+    padding: .5rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.Superior-svg:nth-child(2){
+    margin-left: 1em;
+}
+.Superior-menus{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+.Superior-mobile{
+    
+    padding: 1em 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000 ;
+    z-index: 1;
+}
+.Mobile-img{
+    width: 30%;
+    max-width: 8rem;
+    cursor: pointer;
+}
+.Mobile-svg{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    fill: #fff;
+}
+.Mobile-span{
+    background-color: white;
+    padding: .2em 1em;
+    border-radius:2em;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Superior-premium{
+    
+}
+
+.Superior-registro{
+}
+.Premium-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.Premium-ul::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2rem;
+    background-color: grey;
+    margin: 0 1em;
+}
+.Premium-li{
+    margin-right: 1.5em;
+    transform: scale(1);
+    transition: all .2s ease;
+}
+.Premium-li:hover{
+    transform: scale(1.1);
+}
+.Registro-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.Registro-li{
+    margin-left: 1.5em;
+    transform: scale(1);
+    transition: all .2s ease;
+}
+.Registro-li:hover{
+    transform: scale(1.1);
+}
+.Registro-li:last-child{
+    padding: 0.5em 1.5em;
+    background-color: aliceblue;
+    color: #2a2a2a;
+    border-radius: 1.5em;
+    font-weight: 700;
+}
+
+@media (max-width:750px) {
+    .Superior{
+        width: 100%;
+        display: none;
+    }
+    .Superior-mobile{
+        display: flex;
+    }
+}

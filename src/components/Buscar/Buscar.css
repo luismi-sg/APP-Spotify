@@ -1,0 +1,29 @@
+.Buscar{
+    height: 100vh;
+    color: white;
+}
+.Buscar-wrapper{
+    padding: 5em 2em 0em 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Buscar-h2{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.Buscar-grilla{
+    padding: 1.5em 0em;
+}
+.Grilla-div{
+    width: 12em;
+    height: 12em;
+    background-color: #00386c;
+    border-radius: 10px;
+}
+.Grilla-h3{
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: 800;
+}

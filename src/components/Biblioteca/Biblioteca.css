@@ -1,0 +1,12 @@
+.Biblioteca{
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5em 2em 0em 2em;
+}
+.Biblioteca-h2{
+    color: white;
+    font-size: 2em;
+}

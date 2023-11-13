@@ -1,0 +1,109 @@
+.Header{
+    position: fixed;
+    top: 0  ;
+    left: 0;
+    width: 16em;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 1.5em 1.5em;
+}
+.Header-row{
+
+}
+
+.Header-h1{
+    max-width: 8rem;
+    margin: 0 0 2em;
+}
+.Header-link{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.7;
+}
+.Header-link:hover{
+    opacity: 1;
+}
+.Header-nav{
+    margin: 0 0 3em;
+    font-weight: 600;
+}
+.Header-ul{}
+.Header-li{
+    margin: 0 0 1.2em;
+}
+.Header-li:nth-child(4){
+    margin: 2em 0 1.2em;
+}
+.Header-icon{
+    gap: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 1em 0 0;
+}
+.Header-li:nth-child(4) .Header-icon{
+    padding: .3em;
+    background-color: #fff;
+    border-radius: .2em;
+}
+.Header-li:last-child .Header-icon{
+    padding: .3em;
+    background-image: linear-gradient(to left , #af2896 , #509bf5);
+    border-radius: .2em;
+}
+.Header-span{
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.Header-legales{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .8rem;
+
+    color:grey;
+    font-size: .8rem;
+}
+.Header-idioma{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    border: 1px solid #fff;
+    border-radius: 2em;
+    margin: 2em 0 0;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .2s ease;
+}
+.Header-idioma:hover{
+    transform: scale(1.05);
+}
+.Idiomas-icon{
+    height: 1em;
+    width: 1em;
+    margin: 0 1em 0 0;
+}
+.Idiomas-span{
+    font-size: .9em;
+    font-weight: 700;
+}
+
+@media (max-width:750px) {
+    .Header{
+        display: none;
+
+    }
+
+}

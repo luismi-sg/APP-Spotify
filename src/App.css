@@ -1,0 +1,35 @@
+.Spotify{
+    display: flex;
+    justify-content: flex-end;
+}
+.Contenido{
+    width: calc( 100% - 16rem );
+}
+/* width */
+body::-webkit-scrollbar {
+    width: .8em;
+  }
+  
+/* Track */
+body::-webkit-scrollbar-track {
+background: #212121;
+
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: #3d3d3d;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+
+@media (max-width:750px) {
+    .Contenido{
+        width: 100%;
+    }
+
+}

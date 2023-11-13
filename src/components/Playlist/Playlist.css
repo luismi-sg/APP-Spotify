@@ -1,0 +1,68 @@
+.ListInt{
+    background-color: #6e64f8a3;
+    padding: 5em 1em 1em;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.ListInt-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1em;
+}
+.ListInt-img{
+    width: 15%;
+    margin-right: 2em;
+    box-shadow: 0px 0px 20px 5px #0000002f;
+}
+.ListInt-content{
+    width: 100%;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.ListInt-h2{
+    display: block;
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: 900;
+}   
+.ListInt-p{
+    display: block;
+    font-size: .8em;
+}
+.lista{
+    font-weight: 700;
+}
+.parrafo{
+    opacity: .8;
+}
+
+@media (max-width:600px) {
+    .ListInt{
+        padding-top: 7em;
+    }
+    .ListInt-wrapper{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0em;
+    }
+    .ListInt-img{
+        width: 80%;
+        margin-right: 0;
+    }
+    .ListInt-content{
+
+        margin-top: 2em;
+    }
+    .ListInt-h2{
+        font-size: 2em;
+    } 
+}
