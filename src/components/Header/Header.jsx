@@ -2,12 +2,31 @@ import './Header.css'
 
 import { NavLink } from 'react-router-dom'
 
-import { spotify } from '../../bbdd'
-const { header } = spotify
-const { h1, menu , legal } = header
+// import { spotify } from '../../bbdd'
+// const { header } = spotify
+// const { h1, menu , legal } = header
 
 
 export const Header = ( ) =>{
+
+    const [ header , setHeader ] = useState([])
+    //FETCH AL CONTENIDO DEL MAIN
+    useEffect( () => {
+        let controller = new AbortController()
+        let options = {
+            method: "get",
+            signal: controller.signal,
+            headers: {
+                "Content-type" : "application/json"
+            }
+        }
+        fetch('https://api-spotify-ashy.vercel.app/header' , options)
+        .then( res => res.json())
+        .then( data => setHeader( data.spotifyData))
+        .catch( err => console.log( err ))
+        .finally( () => controller.abort() )
+    } , [])
+    const { h1, menu , legal } = header
     return (
         <div className='Header'>
             <div className='Header-row'>
