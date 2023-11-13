@@ -27,7 +27,8 @@ export const Header = ( ) =>{
         .catch( err => console.log( err ))
         .finally( () => controller.abort() ) 
     } , [])
-    const { h1, menu , legal } = header
+    console.log( header )
+    // const { h1, menu , legal } = header
     return (
         <div className='Header'>
             <div className='Header-row'>
