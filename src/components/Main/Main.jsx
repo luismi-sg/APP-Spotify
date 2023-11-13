@@ -19,9 +19,9 @@ export const Main = ( ) => {
                 "Content-type" : "application/json"
             }
         }
-        fetch('mongodb+srv://lmsg1191:conectarmongo@cluster0.5jxyu5a.mongodb.net/SPOTIFY/main' , options)
+        fetch('https://api-spotify-ashy.vercel.app/main' , options)
         .then( res => res.json())
-        .then( data => setMain( data.mainData))
+        .then( data => setMain( data.spotifyData))
         .catch( err => console.log( err ))
         .finally( () => controller.abort() )
     } , [])
