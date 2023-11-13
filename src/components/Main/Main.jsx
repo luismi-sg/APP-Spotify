@@ -15,7 +15,7 @@ export const Main = ( ) => {
         let options = {
             method: "get",
             signal: controller.signal,
-            header: {
+            headers: {
                 "Content-type" : "application/json"
             }
         }
