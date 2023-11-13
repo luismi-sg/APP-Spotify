@@ -1,16 +1,35 @@
 import './Main.css'
 
 import { NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
-import { spotify } from '../../bbdd'
-const { main } = spotify
-
+// import { spotify } from '../../bbdd'
+// const { main } = spotify
 
 export const Main = ( ) => {
+
+    const [ main , setMain ] = useState([])
+    //FETCH AL CONTENIDO DEL MAIN
+    useEffect( () => {
+        let controller = new AbortController()
+        let options = {
+            method: "get",
+            signal: controller.signal,
+            header: {
+                "Content-type" : "application/json"
+            }
+        }
+        fetch('mongodb+srv://lmsg1191:conectarmongo@cluster0.5jxyu5a.mongodb.net/SPOTIFY/main' , options)
+        .then( res => res.json())
+        .then( data => setMain( data.mainData))
+        .catch( err => console.log( err ))
+        .finally( () => controller.abort() )
+    } , [])
+
     return( 
     <div className='Main'>
         {main.map(  (eachCarrusel ) =>
-            <Carrusel  key={eachCarrusel.id} { ...eachCarrusel }/>
+            <Carrusel key={eachCarrusel.id} { ...eachCarrusel }/>
         )}
     </div>
     )
