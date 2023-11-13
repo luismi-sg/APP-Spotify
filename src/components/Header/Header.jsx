@@ -25,9 +25,10 @@ export const Header = ( ) =>{
         .then( res => res.json())
         .then( data => setHeader( data.spotifyData))
         .catch( err => console.log( err ))
-        .finally( () => controller.abort() ) 
+        .finally( () => controller.abort() )
+        console.log( header )
     } , [])
-    console.log( header )
+    
     // const { h1, menu , legal } = header
     return (
         <div className='Header'>
