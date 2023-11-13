@@ -23,13 +23,13 @@ export const Header = ( ) =>{
         }
         fetch('https://api-spotify-ashy.vercel.app/header' , options)
         .then( res => res.json())
-        .then( data => setHeader( data.spotifyData[0]))
+        .then( data => setHeader( data.spotifyData))
         .catch( err => console.log( err ))
         .finally( () => controller.abort() )
         console.log( header )
     } , [])
     
-    const { h1, menu , legal } = header
+    const [ h1, menu , legal ] = header
     console.log( h1 , menu , legal)
     return (
         <div className='Header'>
