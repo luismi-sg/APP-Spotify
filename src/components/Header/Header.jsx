@@ -29,7 +29,8 @@ export const Header = ( ) =>{
         console.log( header )
     } , [])
     
-    // const { h1, menu , legal } = header
+    const { h1, menu , legal } = header
+    console.log( h1 , menu , legal)
     return (
         <div className='Header'>
             <div className='Header-row'>
