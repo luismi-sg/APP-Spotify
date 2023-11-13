@@ -10,7 +10,7 @@ const { h1, menu , legal } = header
 
 export const Header = ( ) =>{
 
-    // const [ header , setHeader ] = useState([])
+    // const [ header , setHeader ] = useState()
     // //FETCH AL CONTENIDO DEL MAIN
     // useEffect( () => {
     //     let controller = new AbortController()
@@ -26,7 +26,6 @@ export const Header = ( ) =>{
     //     .then( data => setHeader( data.spotifyData))
     //     .catch( err => console.log( err ))
     //     .finally( () => controller.abort() )
-    //     console.log( header )
     // } , [])
     
     // const [ h1, menu , legal ] = header
