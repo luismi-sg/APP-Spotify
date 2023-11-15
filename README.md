@@ -4,7 +4,7 @@ This is a replica of Spotify's Interface
 
 ## Live Web
 
-🌐 <a href="https://spotify-proyecto.vercel.app/" target="_blank"> https://spotify-proyecto.vercel.app/ </a>
+🌐 <a target="_blank" href="https://spotify-proyecto.vercel.app/" > https://spotify-proyecto.vercel.app/ </a>
 
 ## Installation
 
