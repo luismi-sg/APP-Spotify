@@ -10,7 +10,7 @@ This is a replica of Spotify's Interface
 
 Use the NPM on node.js
 
-```bash
+```javascript
 
 npm run dev
 
