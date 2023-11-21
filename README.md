@@ -6,9 +6,19 @@ This is a replica of Spotify's Interface
 
 🌐 <a target="_blank" href="https://spotify-proyecto.vercel.app/" > https://spotify-proyecto.vercel.app/ </a>
 
+<img alt="Spotify-Home" src="https://github.com/luismi-sg/APP-Spotify/assets/120020439/f0b881f4-41b1-4793-917b-1edbda260139">
+
 ## Installation
 
-Use the NPM on node.js
+1. Download and Install node_modules inside the App folder
+   
+```nodejs
+
+npm install
+
+```
+
+2. Use the NPM on node.js to start the server
 
 ```javascript
 
@@ -34,12 +44,14 @@ Database:
 <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
 
 
-## Development & Design
+## What I Learned
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+✅ Use of Components and Hooks (useState, useEffect, useNavigate) on React JS.
+
+✅ Connect to an API <a target="_blank" href="https://github.com/luismi-sg/API-Spotify" > Spotify API </a>with Express JS
+
+✅ Make my own DataBase on Mongo DB
 
 ## License
 
